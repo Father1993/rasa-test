@@ -1,0 +1,45 @@
+:root {
+    --container-width: 1440px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Сброс стилей для списков */
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Медиа-запросы */
+@media (max-width: 1200px) {
+    /* Медия запросы для планшетов */
+}
+
+@media (max-width: 768px) {
+    /* Медия запросы для мобильных */
+}
