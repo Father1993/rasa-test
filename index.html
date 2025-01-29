@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Мета-теги -->
-        <title>Солид Банк - Надежный банк для частных клиентов и бизнеса</title>
+        <title>
+            Автокредит | Солид Банк - Надежный банк для частных клиентов и
+            бизнеса
+        </title>
         <meta
             name="description"
             content="Солид Банк предлагает выгодные условия авто кредитования, вклады и банковские услуги для частных лиц и бизнеса. Надежный банк с государственной поддержкой"
@@ -58,44 +61,75 @@
         <link rel="stylesheet" href="src/styles/fonts.css" />
         <link rel="stylesheet" href="src/styles/styles.css" />
     </head>
-    <body class="container">
-        <header>
-            <div>
-                <nav></nav>
+    <body>
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <nav class="header__nav-top">
+                        <ul class="header__nav-top-list">
+                            <li
+                                class="header__nav-top-item header__nav-top-item--active"
+                            >
+                                Частным клиентам
+                            </li>
+                            <li class="header__nav-top-item">Для бизнеса</li>
+                            <li class="header__nav-top-item">О банке</li>
+                            <li class="header__nav-top-item">Офисы</li>
+                        </ul>
+                    </nav>
 
-                <div>
-                    <a href="tel:78007755606">8 (800) 775-56-06</a>
-                    <a href="#">Хабаровск</a>
-                    <a href="#">English</a>
+                    <div class="header__contacts">
+                        <a class="header__phone" href="tel:78007755606"
+                            >8 (800) 775-56-06</a
+                        >
+                        <button class="header__city-btn">Хабаровск</button>
+                        <button class="header__lang-btn">English</button>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <div class="header__logo">
-                    <img src="src/images/Logo.png" alt="Солид Банк - логотип" />
-                </div>
-                <nav>
-                    <ul>
-                        <li>Кредиты</li>
-                        <li>Вклады</li>
-                        <li>Обмен валют</li>
-                        <li>Карты</li>
-                        <li>Ипотека</li>
-                        <li>Переводы</li>
-                        <li>Страхование</li>
-                        <li>Страхование</li>
-                        <li>Сервисы</li>
-                    </ul>
-                </nav>
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__bottom-wrapper">
+                        <div class="header__logo">
+                            <img
+                                src="src/images/Logo.png"
+                                alt="Солид Банк - логотип"
+                            />
+                        </div>
+                        <nav class="header__nav-bottom">
+                            <ul class="header__nav-bottom-list">
+                                <li class="header__nav-bottom-item">Кредиты</li>
+                                <li class="header__nav-bottom-item">Вклады</li>
+                                <li class="header__nav-bottom-item">
+                                    Обмен валют
+                                </li>
+                                <li class="header__nav-bottom-item">Карты</li>
+                                <li class="header__nav-bottom-item">Ипотека</li>
+                                <li class="header__nav-bottom-item">
+                                    Переводы
+                                </li>
+                                <li class="header__nav-bottom-item">
+                                    Страхование
+                                </li>
+                                <li class="header__nav-bottom-item">Сервисы</li>
+                            </ul>
+                        </nav>
 
-                <div>
-                    <a href="#">Заказать звонок</a>
-                    <a href="#">Интернет-банк</a>
+                        <div class="header__actions">
+                            <a href="#" class="header__action-link"
+                                >Заказать звонок</a
+                            >
+                            <a href="#" class="header__action-link"
+                                >Интернет-банк</a
+                            >
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <main class="">
+        <main class="container">
             <div class="breadcrumbs">
                 <ul>
                     <li>Главная</li>

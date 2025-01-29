@@ -1,5 +1,8 @@
 :root {
     --container-width: 1440px;
+    --color-border: #e0e1e6;
+    --color-active: #313133;
+    --color-text-gray: #8d8d8d;
 }
 
 * {
@@ -31,10 +34,117 @@ body {
 .container {
     max-width: var(--container-width);
     margin: 0 auto;
+    padding: 0 60px;
 }
 
-.flex {
+.header {
+    width: 100%;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.header__top {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.header__top .container {
     display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.header__nav-top-list {
+    display: flex;
+    gap: 32px;
+}
+
+.header__nav-top-item {
+    position: relative;
+    font-size: 15px;
+    color: var(--color-text-gray);
+    cursor: pointer;
+    padding-bottom: 16px;
+    margin-bottom: -16px;
+}
+
+.header__nav-top-item--active {
+    color: var(--color-active);
+    font-weight: 500;
+}
+
+.header__nav-top-item--active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-active);
+}
+
+.header__contacts {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header__phone {
+    color: var(--color-active);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header__city-btn,
+.header__lang-btn {
+    background: none;
+    border: none;
+    color: var(--color-text-gray);
+    cursor: pointer;
+}
+
+.header__bottom {
+    padding: 24px 0;
+}
+
+.header__bottom-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo img {
+    width: 130px;
+    height: 30px;
+}
+
+.header__nav-bottom-list {
+    display: flex;
+    gap: 32px;
+}
+
+.header__nav-bottom-item {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header__actions {
+    display: flex;
+    gap: 24px;
+}
+
+.header__action-link {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header__action-link:first-child {
+    color: #2c9b3e;
+}
+
+.header__action-link:last-child {
+    color: #8b1257;
 }
 
 /* Медиа-запросы */
