@@ -123,25 +123,36 @@
                     <h2>Выберите себе авто</h2>
                     <label for="cars-list">
                         Свернуть список машин
-                        <select name="cars-list" type="text" />
+                        <select name="cars-list" id="cars-list">
+                            <option value="">Выберите из списка</option>
+                        </select>
                     </label>
                 </div>
 
-                <div>
+                <div class="filter__controls">
                     <label for="car-brand">
                         Марка
-                        <select name="car-brand" type="text" />
+                        <select name="car-brand" id="car-brand">
+                            <option value="">Выберите марку</option>
+                        </select>
                     </label>
                     <label for="car-year">
                         Год
-                        <select name="car-year" type="text" />
+                        <select name="car-year" id="car-year">
+                            <option value="">Выберите год</option>
+                        </select>
                     </label>
                     <label for="car-price-in">
-                        Цена
-                        <select name="car-price-in" type="text" />
+                        Цена от
+                        <select name="car-price-in" id="car-price-in">
+                            <option value="">Минимальная</option>
+                        </select>
                     </label>
                     <label for="car-price-out">
-                        <select name="car-price-out" type="text" />
+                        до
+                        <select name="car-price-out" id="car-price-out">
+                            <option value="">Максимальная</option>
+                        </select>
                     </label>
                 </div>
             </section>
@@ -271,11 +282,11 @@
                 </div>
                 <div>
                     <div>
-                        <a href="tel:78007755606">8 800 775-56-06</a>
+                        <a href="tel:78007755606">8 800 775-56-06</a>
                         <span>Для звонков по России (бесплатно)</span>
                     </div>
                     <div>
-                        <a href="+7495232-37-23">+7 495 232-37-23</a>
+                        <a href="+7495232-37-23">+7 495 232-37-23</a>
                         <span>Для блокировка карт (круглосуточно)</span>
                     </div>
                     <div>
@@ -329,4 +340,3 @@
         </footer>
     </body>
 </html>
-ss
